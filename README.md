@@ -1,19 +1,17 @@
 # my-social-media
 
-It created by React JS and Node JS
+This app is created by React JS, Node JS, MongoDB.
 
-To run this project
+To run this project first of all install the dependencies and devDependencies and start the backend server.
 
-### $ cd BackEnd
+```sh
+cd BackEnd/ && yarn install
+cd BackEnd/ && yarn dev
+```
 
-### BackEnd/$ yarn install
+Afer that install the dependencies and devDependencies for fronted and start the frontend server.
 
-### yarn dev
-
-Afer that start backend server
-
-and run react:
-
-### `cd react-fornt`
-
-### `yarn start`
+```sh
+cd FrontEnd/ && yarn install
+cd FrontEnd/ && yarn start
+```
