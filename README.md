@@ -1,14 +1,19 @@
-# react-social-media
+# my-social-media
 
-Go those two project directory and run:
+It created by React JS and Node JS
 
-### `npm install`
+To run this project
 
-Afer that start backend server  
+### $ cd BackEnd
 
+### BackEnd/$ yarn install
 
+### yarn dev
 
-and run react: 
+Afer that start backend server
+
+and run react:
 
 ### `cd react-fornt`
-### `npm start`
+
+### `yarn start`

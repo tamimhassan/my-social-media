@@ -77,7 +77,7 @@ exports.forgotPassword = (req, res) => {
   console.log('signin req.body', email);
   // find the user based on email
   User.findOne({ email }, (err, user) => {
-    if err or no user
+    // if err or no user
     if (err || !user)
       return res.status('401').json({
         error: 'User with that email does not exist!',

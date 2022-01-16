@@ -85,9 +85,9 @@ function Posts() {
     <div>
       <div className='container'>
         <h2 className='mt-5 mb-5'>
-          {!posts.length ? 'No Post Here Go to Previous Page' : 'Recent Posts'}
+          {!posts?.length ? 'No Post Here Go to Previous Page' : 'Recent Posts'}
         </h2>
-        {renderPost(posts)}
+        {posts ? renderPost(posts) : undefined}
       </div>
       {page > 1 ? (
         <button
@@ -100,7 +100,7 @@ function Posts() {
         ''
       )}
 
-      {posts.length ? (
+      {posts?.length ? (
         <button
           className='btn btn-raised btn-success mt-5 mb-5'
           onClick={() => loadMore(1)}
