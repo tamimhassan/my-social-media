@@ -31,14 +31,16 @@ exports.getPosts = async (req, res) => {
     .countDocuments()
     .then((count) => {
       totalItems = count;
-      return Post.find()
-        .skip((currentPage - 1) * perPage)
-        .populate('comments', 'text created')
-        .populate('comments.postedBy', '_id name')
-        .populate('postedBy', '_id name')
-        .sort({ date: -1 })
-        .limit(perPage)
-        .select('_id title body likes');
+      return (
+        Post.find()
+          .skip((currentPage - 1) * perPage)
+          .populate('comments', 'text created')
+          // .populate('comments.postedBy', '_id name')
+          .populate('postedBy', '_id name')
+          .sort({ date: -1 })
+          .limit(perPage)
+          .select('_id title body created')
+      );
     })
     .then((posts) => {
       res.status(200).json(posts);

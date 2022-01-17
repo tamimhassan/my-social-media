@@ -85,7 +85,7 @@ function Posts() {
     <div>
       <div className='container'>
         <h2 className='mt-5 mb-5'>
-          {!posts?.length ? 'No Post Here Go to Previous Page' : 'Recent Posts'}
+          {!posts?.length ? 'No post here ' : 'Recent Posts'}
         </h2>
         {posts ? renderPost(posts) : undefined}
       </div>

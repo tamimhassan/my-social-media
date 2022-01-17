@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Signout, isAuthenticated } from '../auth';
 import defaultAvatar from '../images/defaultAvatar.png';
+import webLogo from '../images/webLogo.png';
 
 function Menu({ history }) {
   const isActive = (history, path) => {
@@ -11,9 +12,19 @@ function Menu({ history }) {
 
   return (
     <div>
-      <nav className='mb-1 navbar navbar-expand-sm navbar-dark orange lighten-1'>
-        <Link className='navbar-brand' to='/'>
-          Navbar
+      <nav className='navbar navbar-expand-sm navbar-dark orange lighten-1'>
+        <Link
+          className='navbar-brand'
+          to='/'
+          style={{ display: 'flex', alignItems: 'center' }}
+        >
+          <img
+            src={webLogo}
+            alt='webLogo'
+            className='mr-1'
+            style={{ height: 35 }}
+          />
+          Social Zone
         </Link>
         <button
           className='navbar-toggler'

@@ -15,3 +15,7 @@ Afer that install the dependencies and devDependencies for fronted and start the
 cd FrontEnd/ && yarn install
 cd FrontEnd/ && yarn start
 ```
+
+#### The Web Look like this
+
+![sideIntro.gif](Files-For-README/sideIntro.gif)

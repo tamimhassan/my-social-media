@@ -5,8 +5,8 @@ function Home() {
   return (
     <div className='home__page'>
       <div className='jumbotron'>
-        <h2>Home</h2>
-        <p className='lead'>Welcome to React Frontend</p>
+        <h2>Hello,</h2>
+        <p className='lead'>Welcome to Social Zone</p>
       </div>
       <div className='container'>
         <Posts />
