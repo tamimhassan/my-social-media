@@ -9,7 +9,7 @@ function SocialLogin() {
   return (
     <div className='container'>
       <GoogleLogin
-        clientId='195512577268-r4s8jetp6ecut6auai1gcc3l9l9pvkfg.apps.googleusercontent.com'
+        clientId={process.env.GOOGLE_CLIENT_ID}
         buttonText='Login with Google'
         onSuccess={responseGoogle}
         onFailure={responseGoogle}
